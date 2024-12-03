@@ -22,10 +22,6 @@ def parse_html(filepath):
             img_element = soup.find('img', class_='img front')
             if img_element:
                 product['image_src'] = img_element['src']
-
-            # Добавление других полей по необходимости,  адаптируя селекторы к вашей HTML структуре
-
-
             return product
     except FileNotFoundError:
         print(f"Файл {filepath} не найден.")
