@@ -59,7 +59,7 @@ def process_data(data):
     return sorted_data, filtered_data, price_stats, processor_counts
 
 
-directory = './resources/2' # Замените на вашу директорию с html-файлами
+directory = './resources/2'
 all_products = []
 for filename in os.listdir(directory):
   if filename.endswith(".html"):
